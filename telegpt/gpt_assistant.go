@@ -180,6 +180,7 @@ func startManagerBot(logstream chan string, botToken string) {
 								Name:  newbot.Self.UserName,
 								Token: newBotToken,
 							})
+							writeConfig(config)
 							activeBots = append(activeBots, newbot.Self.UserName)
 							go startClientBot(logstream, newBotToken)
 							msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Bot added: @"+newbot.Self.UserName)
