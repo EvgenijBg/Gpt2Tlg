@@ -1,0 +1,6 @@
+{
+    "assistantID":"openai-assistant-id",
+    "apiKey":"openai-api-key",
+    "botTokens":["tokens"],
+    "initStorage":true
+}
